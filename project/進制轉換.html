@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>進制轉換</title>
+</head>
+<body>
+	<p>請輸入非負整數</p>
+	<input type="input" id="number"/>
+	<button type="button" onclick="bin()" value="bin">二進位</button>
+	<button type="button" onclick="oct()">八進位</button>
+	<button type="button" onclick="hex()">十六進位</button>
+	<script>
+		
+		var n= document.getElementById("number");
+		
+		function bin(){
+			var num= parseInt(n.value);
+			alert(num.toString(2));
+		}
+		function oct(){
+			var num= parseInt(n.value);
+			alert(num.toString(8));
+		}
+		function hex(){
+			var num= parseInt(n.value);
+			alert(num.toString(16));
+		}
+	</script>
+
+
+</body>
+</html>
